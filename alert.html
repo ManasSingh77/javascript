@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slert,confirm and prompt</title>
+</head>
+<body>
+    <script> a=prompt("Enter your age");
+        console.log("age=",a);
+        if(a>=18){
+            alert("You are allowed Lets go");
+            name=prompt("What is your name");
+            console.log("name=",name);      
+            let  deletepost=confirm("Do you really want to delete this post?");
+        if(deletepost){
+            alert("Your post is deleted");
+            console.log("Post deleted successfully");
+        }
+        else{
+            alert("Your post is not deleted");
+            console.log("Post is not deleted");
+        }
+        } 
+        else{
+            alert("You are not allowed");
+        }
+    </script>
+</body>
+</html>
